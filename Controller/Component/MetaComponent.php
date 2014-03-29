@@ -3,7 +3,6 @@
 App::uses('Component', 'Controller');
 
 /**
- *
  * @author Stefan Dickmann <stefan@php-engineer.de>
  */
 class MetaComponent extends Component {
@@ -56,7 +55,6 @@ class MetaComponent extends Component {
 	 */
 	public function beforeRender(Controller $controller) {
 		if (!($meta = $this->_readMetaCache())) {
-			debug('Not From Cache');
 			$methods = array(
 				'action' => $this->settings['prefix'] . ucfirst($this->Controller->request->params['action']),
 				'controller' => $this->settings['prefix'] . ucfirst($this->Controller->request->params['controller']),
