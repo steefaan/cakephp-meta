@@ -1,1 +1,1 @@
-## CakePHP SEO Plugin
+## CakePHP Meta Plugin
