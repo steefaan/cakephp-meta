@@ -12,7 +12,7 @@ class MetaComponent extends Component {
 	 *
 	 * @var array
 	 */
-	public $_settings = array(
+	protected $_settings = array(
 		'prefix' => 'meta',
 		'cache' => true
 	);
@@ -124,7 +124,8 @@ class MetaComponent extends Component {
 					'prefix' => $this->settings['prefix']
 				)
 			);
-		} elseif (is_array($this->settings['cache'])) {
+		}
+		if (is_array($this->settings['cache'])) {
 			return (bool)Cache::config(
 				$this->settings['prefix'],
 				$this->settings['cache']
