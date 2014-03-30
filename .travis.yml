@@ -9,7 +9,7 @@ before_script:
   - mv ../cakephp-meta plugins/Meta
   - chmod -R 777 ../cakephp/app/tmp
   
- script:
+script:
   - ./lib/Cake/Console/cake test Meta AllTest --stderr
   
 notifications:
