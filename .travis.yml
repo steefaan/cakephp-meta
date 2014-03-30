@@ -10,7 +10,7 @@ before_script:
   - chmod -R 777 ../cakephp/app/tmp
   
 script:
-  - ./lib/Cake/Console/cake test Meta AllTest --stderr
+  - ./lib/Cake/Console/cake test Meta All --stderr
   
 notifications:
   - email: false
