@@ -4,8 +4,13 @@ php:
   - 5.4
   - 5.3
   
-before_install:
-  composer self-update
+before_script:
+  - git clone --depth 1 --branch 2.5 git://github.com/cakephp/cakephp ../cakephp && cd ../cakephp
+  - mv ../cakephp-meta plugins/Meta
+  - chmod -R 777 ../cakephp/app/tmp
+  
+ script:
+  - ./lib/Cake/Console/cake test Meta AllTest --stderr
   
 notifications:
-  email: false
+  - email: false
