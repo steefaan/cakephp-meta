@@ -20,7 +20,7 @@ class MetaComponentTest extends CakeTestCase {
 			new ComponentCollection()
 		);
 		$this->Controller = new TestMetaController(
-			new CakeRequest(), new CakeResponse()
+			new CakeRequest('/test'), new CakeResponse()
 		);
 		$this->MetaComponent->initialize($this->Controller);
 		$this->MetaComponent->startup($this->Controller);
