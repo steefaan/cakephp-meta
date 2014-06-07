@@ -1,0 +1,37 @@
+{
+	"name" : "php-engineer/cakephp-meta",
+	"description" : "A CakePHP plugin to handle meta",
+	"type" : "cakephp-plugin",
+	"authors" : [{
+			"name" : "Stefan Dickmann",
+			"email" : "stefan@php-engineer.de"
+		}
+	],
+	"keywords" : [
+		"cakephp",
+		"plugin",
+		"meta"
+	],
+	"homepage" : "https://github.com/php-engineer/cakephp-meta",
+	"license" : [
+		"MIT"
+	],
+	"require" : {
+		"composer/installers" : "*",
+		"php" : ">=5.3"
+	},
+	"support" : {
+		"source" : "https://github.com/php-engineer/cakephp-meta",
+		"email" : "stefan@php-engineer.de",
+		"issues" : "https://github.com/php-engineer/cakephp-meta/issues",
+		"wiki" : "https://github.com/php-engineer/cakephp-meta/wiki"
+	},
+	"extra" : {
+		"installer-paths" : {
+			"Plugin/Meta/" : [
+				"php-engineer/cakephp-meta"
+			]
+		},
+		"installer-name" : "Meta"
+	}
+}
